@@ -9,6 +9,10 @@ describe('API COMMAND',()=>{
         browser.alertAccept();
         let result = $(RESULT).getText();
         console.log(result) //You clicked: Ok
+        let resultColor = $(RESULT).getCssProperty('color');
+        console.log(resultColor) //You clicked: Ok
+        
+        
     });
     it('ALERT DISMISS',()=>{
         $(JS_ALERT).click();
