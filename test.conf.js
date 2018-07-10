@@ -1,6 +1,6 @@
 exports.config={
     specs:[
-        './test_scripts/dropDown.js'
+        './test_scripts/Alert.js'
     ],
     host:'localhost',
     port:9515,
