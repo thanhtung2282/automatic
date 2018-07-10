@@ -10,17 +10,18 @@ describe('API COMMAND',()=>{
         let result = $(RESULT).getText();
         console.log(result) //You clicked: Ok
         let resultColor = $(RESULT).getCssProperty('color');
-        console.log(resultColor) //You clicked: Ok
-        
+        console.log(resultColor) //get color
+        let resultElementSize = $(RESULT).getElementSize();// get elementSize
+        console.log(resultElementSize.width)//width:970
         
     });
-    it('ALERT DISMISS',()=>{
+    xit('ALERT DISMISS',()=>{
         $(JS_ALERT).click();
       
         browser.alertDismiss();
 
     });
-    it('ALERT TEXT',()=>{
+    xit('ALERT TEXT',()=>{
         $(JS_ALERT).click();
       
         let alert = browser.alertText();
