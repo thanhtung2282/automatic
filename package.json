@@ -1,0 +1,13 @@
+{
+  "name": "automatic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thanhtung2282/automatic.git",
+  "author": "thanhtung2282 <tungnguyenthanh357@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "wdio-mocha-framework": "^0.6.2",
+    "webdriverio": "^4.13.1"
+  }
+}
