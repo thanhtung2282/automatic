@@ -1,7 +1,9 @@
 exports.config={
-    specs:[],
+    specs:[
+        './test_scripts/openPage.js'
+    ],
     host:'localhost',
-    port:4444,
+    port:9515,
     path:'/',
     capabilities:[
         {

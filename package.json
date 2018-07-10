@@ -5,8 +5,13 @@
   "repository": "https://github.com/thanhtung2282/automatic.git",
   "author": "thanhtung2282 <tungnguyenthanh357@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test":"wdio test.conf.js"
+  },
   "dependencies": {},
   "devDependencies": {
+    "@types/node": "^10.5.2",
+    "@types/webdriverio": "^4.10.3",
     "wdio-mocha-framework": "^0.6.2",
     "wdio-selenium-standalone-service": "0.0.10",
     "webdriverio": "^4.13.1"
