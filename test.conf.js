@@ -1,6 +1,6 @@
 exports.config={
     specs:[
-        './test_scripts/loginForm.js'
+        './test_scripts/dropDown.js'
     ],
     host:'localhost',
     port:9515,
