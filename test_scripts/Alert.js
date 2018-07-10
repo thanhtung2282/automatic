@@ -13,7 +13,10 @@ describe('API COMMAND',()=>{
         console.log(resultColor) //get color
         let resultElementSize = $(RESULT).getElementSize();// get elementSize
         console.log(resultElementSize.width)//width:970
-        
+        let title = browser.getTitle();
+        console.log(title)//The Internet
+        let url = browser.getUrl();
+        console.log(url)//https://the-internet.herokuapp.com/javascript_alerts
     });
     xit('ALERT DISMISS',()=>{
         $(JS_ALERT).click();
