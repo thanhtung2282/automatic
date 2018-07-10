@@ -13,5 +13,7 @@ describe('API COMMAND',()=>{
         $(BTN_UPLOAD).click();
 
         browser.pause(3000);
+
+        browser.saveScreenshot('./ScreenShot.png')//chup man hinh
     })
 })
