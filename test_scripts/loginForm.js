@@ -5,6 +5,7 @@ describe('API Command',()=>{
         const USERNAME = '#username';
         const PASSWORD = '#password';
         const BTN_SUBMIT = '[type="submit"]';
+        const FORM_LOGIN = '#login';
 
         browser.waitForVisible(USERNAME,10000);
         $(USERNAME).setValue('tomsmith');
@@ -12,8 +13,11 @@ describe('API Command',()=>{
         browser.waitForVisible(PASSWORD,10000);
         $(PASSWORD).setValue('SuperSecretPassword!');
 
-        browser.waitForVisible(BTN_SUBMIT,10000);
-        $(BTN_SUBMIT).click();
+        // browser.waitForVisible(BTN_SUBMIT,10000);
+        // $(BTN_SUBMIT).click();
+        browser.waitForVisible(FORM_LOGIN,10000);
+        $(FORM_LOGIN).submitForm();
 
+        browser.pause(3000)
     });
 });
