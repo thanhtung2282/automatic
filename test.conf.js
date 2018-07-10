@@ -1,6 +1,6 @@
 exports.config={
     specs:[
-        './test_scripts/Alert.js'
+        './test_scripts/UploadFile.js'
     ],
     host:'localhost',
     port:9515,
