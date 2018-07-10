@@ -1,6 +1,6 @@
 exports.config={
     specs:[
-        './test_scripts/openPage.js'
+        './test_scripts/loginForm.js'
     ],
     host:'localhost',
     port:9515,
