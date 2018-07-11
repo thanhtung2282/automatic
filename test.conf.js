@@ -1,6 +1,6 @@
 exports.config={
     specs:[
-        './test_scripts/UploadFile.js'
+        './test_scripts/manyTab.js'
     ],
     host:'localhost',
     port:9515,
