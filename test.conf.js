@@ -1,6 +1,6 @@
 exports.config={
     specs:[
-        './pageObject/test_scripts/LoginForm.js'
+        './pageObject/test_scripts/LoginForm_2.js'
     ],
     host:'localhost',
     port:9515,
