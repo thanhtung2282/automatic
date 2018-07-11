@@ -1,19 +1,17 @@
 const USERNAME_TXT = '#username';
 const PASSWORD_TXT = '#password';
-const LOGIN_BTN = '#login';
+const LOGIN_BTN = '[type="submit"]';
 
 class LoginPage {
 
     get username(){
         return $(USERNAME_TXT);
     }
-    get username(){
+    get password(){
         return $(PASSWORD_TXT);
-        
     }
-    get username(){
-        return $(LOGIN_BTN);
-        
+    get loginBtn(){
+        return $(LOGIN_BTN);  
     }
 }
 module.exports = new LoginPage();

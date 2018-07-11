@@ -1,6 +1,6 @@
 exports.config={
     specs:[
-        './test_scripts/manyTab.js'
+        './pageObject/test_scripts/LoginForm.js'
     ],
     host:'localhost',
     port:9515,
