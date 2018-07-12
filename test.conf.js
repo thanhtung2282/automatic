@@ -1,6 +1,6 @@
 exports.config={
     specs:[
-        './pageObject/test_scripts/LoginForm_3.js'
+        './pageObject/test_scripts/LoginFormActionChain.js'
     ],
     host:'localhost',
     port:9515,
