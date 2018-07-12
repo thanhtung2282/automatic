@@ -28,7 +28,7 @@ class LoginPage extends Base {
     }
     verifyTitle(){
         let title = this.getLoginTitle();
-        let expectedTitle = 'Login Page@';
+        let expectedTitle = 'Login Page';
         expect(title).to.equal(expectedTitle,'ERR: Login Title Wrong');
         
     }

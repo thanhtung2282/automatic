@@ -6,7 +6,7 @@
   "author": "thanhtung2282 <tungnguyenthanh357@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "wdio test.conf.js"
+    "Testlogin": "wdio test.conf.js --suite=login_1"
   },
   "dependencies": {},
   "devDependencies": {

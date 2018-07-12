@@ -4,6 +4,10 @@ exports.config={
         './pageObject/test_scripts/LoginFormActionChain.js',
         './pageObject/test_scripts/LoginFormActionChain_2.js',
     ],
+    suites:{
+        login_1:['./pageObject/test_scripts/LoginFormActionChain.js'],
+        login_2:['./pageObject/test_scripts/LoginFormActionChain_2.js']
+    },
     host:'localhost',
     port:9515,
     path:'/',
