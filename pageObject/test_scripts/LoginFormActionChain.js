@@ -5,14 +5,14 @@ describe('LOGIN PAGE ACTION CHAIN', () => {
         let username = 'tomsmith';
         let password = 'SuperSecretPassword!';
         let pageUrl = 'https://the-internet.herokuapp.com/login';
-        browser.url(pageUrl);
+
 
         result = LoginPage
+            .openPage(pageUrl)
             .inputUserName(username)
             .inputPassword(password)
             .btnSubmit()
             .getText();
         equal(result, 'Secure Area')
-        browser.pause(5000);
     });
 });
