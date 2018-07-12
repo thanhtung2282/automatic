@@ -1,18 +1,25 @@
 const LoginPage = require('../LoginPageActionChain');
+const dataLoginPage = require('../test_Data/LoginPage.json');
 const { equal } = require('assert');
 describe('LOGIN PAGE ACTION CHAIN', () => {
     let pageUrl = 'https://the-internet.herokuapp.com/login';
     before('open page for test',()=>{
         LoginPage.openPage(pageUrl);
-        console.log('open page')
-        
     })
-    it('LOGIN FORM SUCCESS', () => {
-        let username = 'tomsmith';
-        let password = 'SuperSecretPassword!';
+    beforeEach('refesh for test',()=>{
+        browser.refresh();
+    })
+    it('LOGIN FORM FAIL', () => {
         result = LoginPage
-            .inputUserName(username)
-            .inputPassword(password)
+            .inputUserName(dataLoginPage.incorrectCredential.username)
+            .inputPassword(dataLoginPage.incorrectCredential.password)
+            .btnSubmit()
+            browser.pause(2000)
+    });
+    it('LOGIN FORM SUCCESS', () => {
+        result = LoginPage
+            .inputUserName(dataLoginPage.correctCredential.username)
+            .inputPassword(dataLoginPage.correctCredential.password)
             .btnSubmit()
             .getText();
         equal(result, 'Secure Area')
