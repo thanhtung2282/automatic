@@ -1,6 +1,6 @@
 const LoginPage = require('../LoginPageActionChain');
 const dataLoginPage = require('../test_Data/LoginPage.json');
-const { equal } = require('assert');
+const { expect  } = require('chai');
 describe('LOGIN PAGE ACTION CHAIN', () => {
     let pageUrl = 'https://the-internet.herokuapp.com/login';
     before('open page for test',()=>{
@@ -22,7 +22,7 @@ describe('LOGIN PAGE ACTION CHAIN', () => {
             .inputPassword(dataLoginPage.correctCredential.password)
             .btnSubmit()
             .getText();
-        equal(result, 'Secure Area')
+        expect(result).to.be.a('string','ERR: Result not a string');
     });
     after('Clear data after test case',()=>{
         console.log('Clear data')
